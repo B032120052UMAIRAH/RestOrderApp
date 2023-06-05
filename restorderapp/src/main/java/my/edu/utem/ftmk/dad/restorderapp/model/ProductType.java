@@ -12,6 +12,7 @@ import jakarta.persistence.Table;
 public class ProductType {
 
 
+	//PK
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "productTypeId")
@@ -20,7 +21,7 @@ public class ProductType {
 	@Column(name = "name")
 	private String name;
 
-	
+	//implement one to many
 	public int getProductTypeId() {
 		return productTypeId;
 	}
